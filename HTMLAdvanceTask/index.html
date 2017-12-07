@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Water sports</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Zaitceva Aleksandra">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="mainHeader">
+		<h1>Water sports</h1>
+		<form>
+			<input type="search" name="searchInput" placeholder="Find..">
+			<input type="button" name="searchButton" value="Search">
+		</form>
+		<form>
+			<input type="email" name="semailInput" placeholder="Email" required>
+			<input type="password" name="passInput" placeholder="Password" required pattern="[A-Za-z0-9]{8,}" title="Only numbers or letters, longer than 8 characters">
+			<input type="submit" name="avtButton" value="Authorization">
+		</form>
+	</header>
+	<nav>
+		<a href="#Surfing">Surfing</a><br>
+		<a href="#Wakeboarding">Wakeboarding</a><br>
+		<a href="#Diving">Diving</a><br>
+		<a href="#Kayaking">Kayaking</a>
+	</nav>
+	<main>
+		<section class="sportSection">
+			<header><h2><a href="#" name="Surfing">Surfing</a></h2></header>
+			<article>
+				<video width="400" height="300" controls poster="surfing.jpg" loop>
+					 <source src="surfing1.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>
+			</article>
+			<article>
+				<audio controls autoplay>
+					<source src="waves.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>
+			</article>
+			<article>
+				<video width="400" height="300" controls poster="tahiti.jpg" loop>
+					 <source src="surfing2.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>			
+			</article>
+			<article>
+				<audio controls>
+					<source src="gulls.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>			
+			</article>	
+			<footer>
+				It was some video and audio about surfing.
+			</footer>
+		</section>
+		<section class="sportSection">
+			<header><h2><a href="#" name="Wakeboarding">Wakeboarding</a></h2></header>
+			<article>
+				<video width="400" height="300" controls poster="wakeboard1.jpg" loop>
+					 <source src="wakeboard1.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>
+			</article>
+			<article>
+				<audio controls>
+					<source src="waves.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>
+			</article>
+			<article>
+				<video width="400" height="300" controls poster="wakeboard2.jpg" loop>
+					 <source src="wakeboard2.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>		
+			</article>
+			<article>
+				<audio controls>
+					<source src="gulls.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>			
+			</article>	
+			<footer>
+				It was some video and audio about wakeboarding.
+			</footer>
+		</section>
+		<section class="sportSection">
+			<header><h2><a href="#" name="Diving">Diving</a></h2></header>
+			<article>
+				<video width="400" height="300" controls poster="diving1.jpg" loop>
+					 <source src="diving1.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>
+			</article>
+			<article>
+				<audio controls>
+					<source src="waves.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>
+			</article>
+			<article>
+				<video width="400" height="300" controls poster="diving2.jpg" loop>
+					 <source src="diving2.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>		
+			</article>
+			<article>
+				<audio controls>
+					<source src="gulls.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>			
+			</article>	
+			<footer>
+				It was some video and audio about diving.
+			</footer>
+		</section>
+		<section class="sportSection">
+			<header><h2><a href="#" name="Kayaking">Kayaking</a></h2></header>
+			<article>
+				<video width="400" height="300" controls poster="kayaking1.jpg" loop>
+					 <source src="kayaking1.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>
+			</article>
+			<article>
+				<audio controls>
+					<source src="waves.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>
+			</article>
+			<article>
+				<video width="400" height="300" controls poster="kayaking2.jpg" loop>
+					 <source src="kayaking2.mp4" type="video/mp4">
+					 Sorry, your browser does not support the <video> element. 
+				</video>		
+			</article>
+			<article>
+				<audio controls>
+					<source src="gulls.mp3" type="audio/mp3" loop>
+					Sorry, your browser does not support the <audio> element. 
+				</audio>			
+			</article>	
+			<footer>
+				It was some video and audio about kayaking.
+			</footer>
+		</section>
+	</main>
+	<aside>
+		<h3>More information about:</h3>
+		<a href="https://en.wikipedia.org/wiki/Surfing" target="_blank">Surfing</a><br>
+		<a href="https://en.wikipedia.org/wiki/Wakeboarding" target="_blank">Wakeboarding</a><br>
+		<a href="https://en.wikipedia.org/wiki/Technical_diving" target="_blank">Diving</a><br>
+		<a href="https://en.wikipedia.org/wiki/Kayaking" target="_blank">Kayaking</a>
+	</aside>
+	<footer class="mainFooter">
+		<p>Thank you for your attention.</p>
+	</footer>
+
+	<script>
+		var vid = document.getElementsByTagName("VIDEO")[0];
+		vid.onplay = function() {
+		    alert("Oops! You seem to have started play a video..");
+		};
+		vid.onpause = function() {
+		    alert("Oops! You seem to have pause a video..");
+		};
+    </script>
+
+</body>
+</html>

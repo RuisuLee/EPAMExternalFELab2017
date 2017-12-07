@@ -1,0 +1,68 @@
+body{
+	margin: 0 auto;
+}
+nav{
+	float: left;
+	width: 19%;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+}
+aside{
+	float: left;
+	width: 19%;
+	text-align: center;
+	font-size: 20px;
+}
+aside h3{
+	color: #007873;
+}
+header{
+	text-align: center;
+}
+a{
+	color: #007873;
+	text-decoration: none;
+}
+h1{
+	color: #007873;
+}
+h2{
+	color: #001414;
+}
+input[type=button]{
+	background-color: #FFFF29;
+}
+input[type=submit]{
+	background-color: #FFFF29;
+}
+footer{
+	color: #69FDFD;
+}
+main{
+	float: left;
+	width: 60%;
+	border-right: 2px solid #00A09A;
+	border-left: 2px solid #00A09A;
+}
+.mainHeader{
+	padding: 5px;
+	border-bottom: 2px solid #00A09A;
+}
+.mainHeader input{
+	margin: 2px;
+	border-radius: 4px;
+	border: 1px solid #00A09A;
+	padding-left: 5px;
+}
+.mainFooter{
+	text-align: center;
+	clear: both;
+	border-top: 2px solid #00A09A;
+}
+.sportSection{
+	text-align: center;
+	margin: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #00A09A;
+}
