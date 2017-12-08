@@ -1,0 +1,91 @@
+body{
+	margin: 0 auto;
+	background-color: black;
+}
+nav{
+	float: left;
+	width: 200px;
+	height: 600px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #066FCD;
+}
+aside{
+	float: left;
+	width: 200px;
+	height: 600px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #066FCD;
+}
+aside h3{
+	color: white;
+}
+header{
+	text-align: center;
+}
+a{
+	padding-bottom: 20px;
+	color: #0057F6;
+	text-decoration: none;
+}
+p{
+	color: #0A7BE9;
+}
+h1{
+	color: white;
+}
+h2{
+	color: white;
+}
+form input{
+	padding: 10px;
+}
+input[type=submit]{
+	background-color: white;
+	color: #002445;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #066FCD;
+}
+i{
+	color: #0A7BE9;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+main{
+	float: left;
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+.mainHeader input{
+	margin: 2px;
+	border-radius: 5px;
+	border: 1px solid #066FCD;
+}
+.mainFooter{
+	margin-top: 200px;
+	text-align: center;
+	clear: both;
+	color: #066FCD;
+}
+.section{
+	padding: 10px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.section-footer{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}

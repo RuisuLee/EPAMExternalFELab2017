@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Water sports</title>
+	<title>Hubble</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Zaitceva Aleksandra">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
 </head>
 <body>
+
 	<header class="mainHeader">
-		<h1>Water sports</h1>
+		<a href="#" name="header"></a>
+		<img src="assets/hubble.jpg">
+		<h1>Hubble Space Telescope</h1>
 		<form>
 			<input type="search" name="searchInput" placeholder="Find..">
-			<input type="button" name="searchButton" value="Search">
+			<input type="submit" name="searchSubmit" value="Search">
 		</form>
 		<form>
 			<input type="email" name="semailInput" placeholder="Email" required>
@@ -19,147 +23,146 @@
 			<input type="submit" name="avtButton" value="Authorization">
 		</form>
 	</header>
+
 	<nav>
-		<a href="#Surfing">Surfing</a><br>
-		<a href="#Wakeboarding">Wakeboarding</a><br>
-		<a href="#Diving">Diving</a><br>
-		<a href="#Kayaking">Kayaking</a>
+		<a href="#header">Heder</a><br>
+		<a href="#main">Main</a><br>
+		<a href="#footer">Footer</a>
 	</nav>
+
 	<main>
-		<section class="sportSection">
-			<header><h2><a href="#" name="Surfing">Surfing</a></h2></header>
-			<article>
-				<video width="400" height="300" controls poster="surfing.jpg" loop>
-					 <source src="surfing1.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>
-			</article>
-			<article>
-				<audio controls autoplay>
-					<source src="waves.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>
-			</article>
-			<article>
-				<video width="400" height="300" controls poster="tahiti.jpg" loop>
-					 <source src="surfing2.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>			
-			</article>
-			<article>
-				<audio controls>
-					<source src="gulls.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>			
-			</article>	
-			<footer>
-				It was some video and audio about surfing.
-			</footer>
-		</section>
-		<section class="sportSection">
-			<header><h2><a href="#" name="Wakeboarding">Wakeboarding</a></h2></header>
-			<article>
-				<video width="400" height="300" controls poster="wakeboard1.jpg" loop>
-					 <source src="wakeboard1.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>
-			</article>
-			<article>
-				<audio controls>
-					<source src="waves.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>
-			</article>
-			<article>
-				<video width="400" height="300" controls poster="wakeboard2.jpg" loop>
-					 <source src="wakeboard2.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>		
-			</article>
-			<article>
-				<audio controls>
-					<source src="gulls.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>			
-			</article>	
-			<footer>
-				It was some video and audio about wakeboarding.
-			</footer>
-		</section>
-		<section class="sportSection">
-			<header><h2><a href="#" name="Diving">Diving</a></h2></header>
-			<article>
-				<video width="400" height="300" controls poster="diving1.jpg" loop>
-					 <source src="diving1.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>
-			</article>
-			<article>
-				<audio controls>
-					<source src="waves.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>
-			</article>
-			<article>
-				<video width="400" height="300" controls poster="diving2.jpg" loop>
-					 <source src="diving2.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>		
-			</article>
-			<article>
-				<audio controls>
-					<source src="gulls.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>			
-			</article>	
-			<footer>
-				It was some video and audio about diving.
-			</footer>
-		</section>
-		<section class="sportSection">
-			<header><h2><a href="#" name="Kayaking">Kayaking</a></h2></header>
-			<article>
-				<video width="400" height="300" controls poster="kayaking1.jpg" loop>
-					 <source src="kayaking1.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>
-			</article>
-			<article>
-				<audio controls>
-					<source src="waves.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>
-			</article>
-			<article>
-				<video width="400" height="300" controls poster="kayaking2.jpg" loop>
-					 <source src="kayaking2.mp4" type="video/mp4">
-					 Sorry, your browser does not support the <video> element. 
-				</video>		
-			</article>
-			<article>
-				<audio controls>
-					<source src="gulls.mp3" type="audio/mp3" loop>
-					Sorry, your browser does not support the <audio> element. 
-				</audio>			
-			</article>	
-			<footer>
-				It was some video and audio about kayaking.
-			</footer>
-		</section>
+
+		<a href="#" name="main"></a>
+		<div class="section">
+			<section>
+				<header>
+					<h2>NASA Hubble Zoom On Orion</h2>
+					<p>Orion is a prominent constellation located on the celestial equator and visible throughout the world. It is one of the most conspicuous and recognizable constellations in the night sky. It was named after Orion, a hunter in Greek mythology. Its brightest stars are Rigel (Beta Orionis) and Betelgeuse (Alpha Orionis), a blue-white and a red supergiant, respectively.</p>
+				</header>
+				<article>
+					<video 
+						autoplay
+						controls 
+						loop 
+						poster="assets/orion.jpg"
+						width="300"
+						height="200" 
+					>
+						<source 
+							src="https://ia801305.us.archive.org/10/items/NASAHubbleZoomOnOrion/NASA%20-%20Hubble%20-%20Zoom%20on%20Orion.mp4" 
+							type="video/mp4"
+						>
+					</video><br>
+					<audio 						 
+						loop 
+						controls
+					>
+						<source 
+							src="https://ia800209.us.archive.org/27/items/SystemofMachineExpansionSpace/Expansion_Space.mp3" 
+							type="audio/mpeg"
+						>
+					</audio>
+				</article>
+				<footer class="section-footer">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+					<i class="fa fa-comment-o" aria-hidden="true"></i>
+					<i class="fa fa-share-square-o" aria-hidden="true"></i>
+				</footer>
+			</section>
+		</div>
+		
+		<div class="section">
+			<section>
+				<header>
+					<h2>Hubble Reveals Ultraviolet Galactic Ring</h2>
+					<p>This spiral galaxy, when seen in visible light, exhibits tightly wound spiral arms that give it a pinwheel shape similar to that of many other spirals. However, when the galaxy is viewed in ultraviolet light with NASA's Hubble Space Telescope, its shape is startlingly different. At ultraviolet wavelengths, which are rendered as blue in the Hubble image, NGC 6782 shows a spectacular, nearly circular bright ring surrounding its nucleus. The ring marks the presence of many recently formed hot stars.</p>
+				</header>
+				<article>
+					<video 
+						controls 
+						loop
+						poster="assets/ring.jpg"
+						width="300"
+						height="200" 
+					>
+						<source 
+							src="https://ia800202.us.archive.org/29/items/SPD-HUBBLE-STScI-2001-37a/low_quicktime_512kb.mp4"
+							type="video/mp4"
+						>
+					</video><br>
+					<audio 
+						loop 
+						controls
+						autoplay
+					>
+						<source 
+							src="https://ia800301.us.archive.org/7/items/AudranArcanekStaticSpace0015/static_0015.mp3" 
+							type="audio/mpeg"
+						>
+					</audio>
+				</article>
+				<footer class="section-footer">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+					<i class="fa fa-comment-o" aria-hidden="true"></i>
+					<i class="fa fa-share-square-o" aria-hidden="true"></i>
+				</footer>
+			</section>
+		</div>
+
+		<div class="section">
+			<section>
+				<header>
+					<h2>Hubble Spies Cosmic Dust Bunnies</h2>
+					<p>Like dust bunnies that lurk in corners and under beds, surprisingly complex loops and blobs of cosmic dust lie hidden in the giant elliptical galaxy NGC 1316. This image made from data obtained with the NASA Hubble Space Telescope reveals the dust lanes and star clusters of this giant galaxy that give evidence that it was formed from a past merger of two gas-rich galaxies.</p>
+				</header>
+				<article>
+					<video 
+						controls 
+						loop 
+						poster="assets/bunnies.jpg"
+						width="300"
+						height="200" 
+					>
+						<source 
+							src="https://ia802701.us.archive.org/33/items/SPD-HUBBLE-STScI-2005-11a/high_quicktime_512kb.mp4"
+							type="video/mp4"
+						>
+					</video><br>
+					<audio 
+						loop 
+						controls
+					>
+						<source 
+							src="https://ia800209.us.archive.org/19/items/Space_Invasion/Space_Invasion.mp3" 
+							type="audio/mpeg"
+						>
+					</audio>
+				</article>
+				<footer class="section-footer">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+					<i class="fa fa-comment-o" aria-hidden="true"></i>
+					<i class="fa fa-share-square-o" aria-hidden="true"></i>
+				</footer>
+			</section>
+		</div>	
+
 	</main>
+
 	<aside>
-		<h3>More information about:</h3>
-		<a href="https://en.wikipedia.org/wiki/Surfing" target="_blank">Surfing</a><br>
-		<a href="https://en.wikipedia.org/wiki/Wakeboarding" target="_blank">Wakeboarding</a><br>
-		<a href="https://en.wikipedia.org/wiki/Technical_diving" target="_blank">Diving</a><br>
-		<a href="https://en.wikipedia.org/wiki/Kayaking" target="_blank">Kayaking</a>
+		<h3>Read more about Hubble:</h3>
+		<a href="http://hubblesite.org/">HubbleSite</a><br>
+		<a href="https://en.wikipedia.org/wiki/Hubble_Space_Telescope">Hubble (Wikipedia)</a><br>
+		<a href="https://www.nasa.gov/mission_pages/hubble/main/index.html">Hubble (NASA cite)</a><br>
+		<a href="https://www.youtube.com/channel/UCfaSK6K7hB3rAH7MLh8o6pw">Hubble on Youtube</a>
 	</aside>
-	<footer class="mainFooter">
-		<p>Thank you for your attention.</p>
+
+	<footer class="mainFooter"> 
+		<a href="#" name="footer"></a>
+		<p>Thank you for your attention. RuisuLee.</p>
 	</footer>
 
 	<script>
-		var vid = document.getElementsByTagName("VIDEO")[0];
+		var vid = document.getElementsByTagName("VIDEO")[1];
 		vid.onplay = function() {
 		    alert("Oops! You seem to have started play a video..");
 		};
