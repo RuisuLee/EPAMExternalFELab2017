@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aliexpress</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Zaitceva Aleksandra">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="header-logo">
+			<a href="../index.html"><img src="img/logo.png"></a>			
+		</div>
+		<div class="header-right">
+			<div class="header-right-search">
+				<input type="search" name="" placeholder="Search..">
+			</div>		
+			<div class="header-cart">
+				<img src="img/cart.png">
+			</div>
+			<div class="header-user">				
+				<a href="javascript:PopUpShow()">
+					<img src="img/user.png">	
+				</a>	
+			</div>
+		</div>
+	</header>
+
+	<div id="popup">
+		<div class="popup-content">
+			<div class="popup-content-exit">
+				<a href="javascript:PopUpHide()">
+					<img src="img/exit.png">
+				</a>
+			</div>
+			<div class="popup-content-reg">
+				<input type="email" name="" placeholder="Email">
+				<input type="password" name="" placeholder="Password">
+				<input type="submit" name="" value="Register">
+			</div>
+			<div class="popup-content-signin">
+				<a href="#">Sign in</a>
+			</div>		
+		</div>		
+	</div>
+
+	<main class="maincontainer">
+
+		<nav class="main-nav">
+			<ul>
+				<li>
+					<img src="img/accessories.png">
+					<a href="assets/accessories.html" class="active">Accessories</a>
+				</li>
+				<li>
+					<img src="img/electronics.png">
+					<a href="#">Electronics</a>
+				</li>
+				<li>
+					<img src="img/fashion.png">
+					<a href="#">Fashion</a>
+				</li>
+				<li>
+					<img src="img/furniture.png">
+					<a href="#">Furniture</a>
+				</li>
+				<li>
+					<img src="img/health.png">
+					<a href="#">Health & Beauty</a>
+				</li>
+				<li>
+					<img src="img/shoes.png">
+					<a href="#">Shoes</a>
+				</li>
+				<li>
+					<img src="img/sport.png">
+					<a href="#">Sporting Goods</a>
+				</li>
+				<li>
+					<img src="img/toys.png">
+					<a href="#">Toys & Games</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container">
+
+			<div class="main-view">
+				<a href="javascript:GetListView()"><img src="img/list.png"></a>
+				<a href="javascript:GetGridView()"><img src="img/grid.png"></a>				
+			</div>
+			
+			<div class="main-goods-list">
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+
+				<div class="main-goods-list-item">
+					<div class="main-goods-list-item-image">
+						<img src="img/rings.jpg">
+					</div>
+					<div class="main-goods-list-item-description">
+						<div class="goods-info">
+							<p class="goods-name">Earrings</p>
+							<p class="goods-price">Price: $10,60</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+						<input type="button" name="" value="Add to cart" class="goods-button">
+					</div>
+				</div>
+			</div>
+
+			<div class="main-goods-grid">
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+
+				<div class="main-goods-grid-item">
+					<img src="img/rings.jpg">
+					<p class="goods-name">Earrings</p>
+					<p class="goods-price">$10,60</p>
+				</div>
+				
+			</div>
+
+
+		</div>
+
+	</main>
+
+	<footer>© RuisuLee 2010-2017 AliExpress</footer>
+
+	<script>
+		$(document).ready(function() {
+			PopUpHide();
+			GetGridView();
+
+		});
+		function PopUpShow(){
+		    $("#popup").show();
+		}
+		function PopUpHide(){
+		    $("#popup").hide();
+		}
+		function GetListView(){	    
+			$(".main-goods-grid").hide();
+		    $(".main-goods-list").show();
+		}
+		function GetGridView(){
+		    $(".main-goods-list").hide();
+		    $(".main-goods-grid").show();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body{
+	margin: 0 auto;
+
+}
+header{
+	width: 80%;
+	margin: 0 auto;
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+main{
+	width: 80%;
+	margin: 0 auto;
+}
+.header-right{
+	display: flex;
+	justify-content: space-between;
+}
+.header-right div{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.header-right-search input{
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+#popup{
+	min-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+.popup-content input[type=email], .popup-content input[type=password]{
+	width: 90%;
+	margin: 20px 0px;
+	padding: 10px;
+}
+.popup-content input[type=submit]{
+	width: 70%;
+	height: 50px;
+	background-color: #e43225;
+	color: #f7971d;
+	border-style: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+.popup-content input[type=submit]:hover{
+	background-color: #f7971d;
+	color: #e43225;
+	cursor: pointer;
+}
+.popup-content{
+	background-color: white;
+	padding: 20px;
+	width: 20%;
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+	box-shadow: 0px 0px 10px #000;
+}
+.popup-content-signin a, .popup-content-exit a{
+	float: right;
+}
+.popup-content-reg{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+.popup-content-signin a{
+	margin-top: 20px;
+	margin-right: 20px;
+	color: #e43225;
+	font-size: 20px;
+	text-decoration: none;
+}
+nav{
+	width: 90%;
+	margin: 80px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+nav div{
+	margin-bottom: 10px;
+}
+nav img{
+	width: 250px;
+}
+nav div p{
+	text-align: center;
+	color: #f7971d;
+}
+nav div a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #e43225;
+}
+footer{
+	text-align: center;
+	clear: both;
+	margin-top: 50px;
+}
+.click{
+	box-shadow: 0px 0px 10px #000;
+}
+
+/*...*/
+.main-nav{
+	width: 45%;
+}
+.main-nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+.main-nav ul li{
+	margin-bottom: 10px;
+}
+.main-nav ul li img{
+	width: 20px;
+}
+.main-nav ul li a{
+	text-decoration: none;
+	color: #f7971d;;
+	font-size: 20px;
+}
+.main-nav ul li a:hover{
+	text-decoration: underline;
+}
+.main-nav ul li .active{
+	color: #e43225;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.main-goods-list{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.main-view{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.main-view img{
+	float: right;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.maincontainer, .goods-info, .main-goods-list-item{
+	display: flex;
+	justify-content: space-around;
+}
+.goods-name{
+	font-size: 20px;
+}
+.goods-price{
+	color: red;
+	font-size: 20px;
+}
+.goods-button{
+	padding: 5px;
+	background-color: #e43225;
+	color: #f7971d;
+	border-style: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.goods-button:hover{
+	background-color: #f7971d;
+	color: #e43225;
+	cursor: pointer;
+}
+.main-goods-grid{
+	padding: 10px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	justify-content: flex-start;
+}
+.main-goods-grid-item{
+	margin: 10px 0px 10px 10px;
+}
+.main-goods-grid-item p{
+	margin: 0;
+}
