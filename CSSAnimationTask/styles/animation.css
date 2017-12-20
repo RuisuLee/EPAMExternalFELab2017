@@ -1,0 +1,241 @@
+body{
+	background-color: black;
+	margin: 0px;
+}
+.road{
+	height: 505px;
+	width: 100%;
+	background-color: gray;
+	position: absolute;
+	top: 25%;
+}
+/*переход*/
+.transition div{
+	width: 200px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+.ttwo{
+	margin-top: 40px;
+}
+.tthree{
+	margin-top: 80px;
+}
+.tfour{
+	margin-top: 120px;
+}
+.tfive{
+	margin-top: 160px;
+}
+.tsix{
+	margin-top: 200px;
+}
+.tseven{
+	margin-top: 240px;
+}
+.teight{
+	margin-top: 280px;
+}
+.tnine{
+	margin-top: 320px;
+}
+.tten{
+	margin-top: 360px;
+}
+.televen{
+	margin-top: 400px;
+}
+.ttwelve{
+	margin-top: 440px;
+}
+.tthirteen{
+	margin-top: 480px;
+}
+/*разметка*/
+.markup div{
+	width: 50px;
+	height: 15px;
+	background-color: white;
+	position: absolute;
+	top: 55%;
+}
+.mtwo{
+	left: 5%;
+	margin-right: 50px;
+}
+.mthree{
+	left: 10%;
+	margin-right: 100px;
+}
+.mfour{
+	left: 15%;
+	margin-right: 150px;
+}
+.mfive{
+	left: 20%;
+	margin-right: 200px;
+}
+.msix{
+	left: 25%;
+	margin-right: 250px;
+}
+.mseven{
+	left: 30%;
+	margin-right: 300px;
+}
+.meight{
+	left: 35%;
+	margin-right: 350px;
+}
+.mnine{
+	left: 55%;
+	margin-right: 550px;
+}
+.mten{
+	left: 60%;
+	margin-right: 600px;
+}
+.meleven{
+	left: 65%;
+	margin-right: 650px;
+}
+.mtwelve{
+	left: 70%;
+	margin-right: 700px;
+}
+.mthirteen{
+	left: 75%;
+	margin-right: 750px;
+}
+.fourteen{
+	left: 80%;
+	margin-right: 800px;
+}
+.fifteen{
+	left: 85%;
+	margin-right: 850px;
+}
+.sixteen{
+	left: 90%;
+	margin-right: 900px;
+}
+.seventeen{
+	left: 95%;
+	margin-right: 950px;
+}
+/*машинки*/
+.rcar1{
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	animation: rcarone 10s ease-in 15s 1 alternate;
+}
+.rcar2{
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	animation: rcartwo 10s ease-in 15s 1 alternate;
+}
+@keyframes rcarone {
+    0%   {left: 20%;top: 55%;}
+    25%  {left: 50%;top: 55%;}
+    50%  {left: 70%;top: 70%;}
+    100% {left: 100%;top: 70%;}
+}
+@keyframes rcartwo {
+    0%   {left: 25%;top: 70%;}
+    25%  {left: 40%;top: 70%;}
+    50%  {left: 80%;top: 55%;}
+    100% {left: 100%;top: 55%;}
+}
+.lcar1{
+	position: absolute;
+	top: 35%;
+	left: 60%;
+	animation: lcarone 10s ease-in 15s 1 alternate;
+}
+.lcar2{
+	position: absolute;
+	top: 20%;
+	left: 55%;
+	animation: lcartwo 10s ease-in 15s 1 alternate;
+}
+@keyframes lcarone {
+    0%   {left: 60%;top: 35%;}
+    25%  {left: 40%;top: 35%;}
+    50%  {left: 20%;top: 35%;}
+    100% {left: 0%;top: 35%;}
+}
+@keyframes lcartwo {
+    0%   {left: 55%;top: 20%;}
+    25%  {left: 40%;top: 20%;}
+    50%  {left: 20%;top: 20%;}
+    100% {left: 0%;top: 20%;}
+}
+/*светофор*/
+.trafficlight{
+
+	width: 500px;
+	height: 150px;
+	background-color: #343239;
+	border-radius: 20px;
+	position: absolute;
+	top: 3%;
+	left: 30%;
+}
+.red{
+	box-shadow: 0px -10px 10px 10px rgba(0,0,0,0.75);
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+	border-radius: 50px;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	background-color: black;
+	animation: redColor 10s linear 1 alternate;
+}
+@keyframes redColor {
+    0%   {background-color:red;}
+    98%   {background-color:red;}
+    100% {background-color:black;}
+}
+.yellow{
+	box-shadow: 0px -10px 10px 10px rgba(0,0,0,0.75);
+	width: 100px;
+	height: 100px;
+	border: 1px solid yellow;
+	border-radius: 50px;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	background-color: black;
+	animation: yellowColor 5s linear 10s 1 alternate;
+}
+@keyframes yellowColor {
+    0%   {background-color:black;}
+    2%   {background-color:yellow;}
+    98% {background-color:yellow;}
+    100% {background-color:black;}
+}
+.green{
+	box-shadow: 0px -10px 10px 10px rgba(0,0,0,0.75);
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	border-radius: 50px;
+	position: absolute;
+	top: 20%;
+	left: 75%;
+	background-color: black;
+	animation: greenColor 10s linear 15s 1 alternate;
+}
+@keyframes greenColor {
+    0%   {background-color:black;}
+    2%   {background-color:green;}
+    98% {background-color:green;}
+    100% {background-color:black;}
+}
