@@ -1,7 +1,7 @@
 //шахматная доска
 function chessBoard(boardW,boardH) {
-  var str;
-    for (var h = 0; h < boardH/2; h++) {
+  var str="";
+    for (var h = 0; h < boardH; h++) {
        for (var w = 0; w < boardW; w++) {
          if (h%2==0) {
            if (w%2==0) {
