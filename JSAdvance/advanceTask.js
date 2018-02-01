@@ -48,7 +48,6 @@ random(0)
 })
 
 //цепочка промисов b
-var array = [];
 function random() {
     return new Promise(function(resolve) {
       var timeout = Math.random()*3000;
@@ -57,47 +56,7 @@ function random() {
     }, timeout)
   })
 }
-random()
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-})
-.then(function(result) {
-  return random();
-})
-.then(function(result) {
-  array.push(result);
-  console.log(array);
-})
+Promise.all([random(), random(), random(), random(), random(), random(), random()]).then(results => {console.log(results);});
 
 
 //замыкания
