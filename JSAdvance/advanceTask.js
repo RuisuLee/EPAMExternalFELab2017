@@ -1,11 +1,7 @@
 //Промисификация
-function isNumeric(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
-}
-
 function compare(value1, value2) {
   return new Promise(function(resolve, reject) {
-    if(!isNumeric(value1)||!isNumeric(value2)){
+    if(typeof(value1)!='number'||typeof(value2)!='number'){
       var error = 'Недопустимое значение параметра';
       reject(error);
     } else {
@@ -64,14 +60,24 @@ var counter = {
   next: function() {
     var currentCount = 1;
     return function() {
+      if (counter.history.length==10) {
+        counter.history.shift();
         counter.history.push(currentCount);
+      }else {
+        counter.history.push(currentCount);
+      }
         return currentCount++;
     };
   },
   prev: function() {
     var currentCount = 10;
     return function() {
+      if (counter.history.length==10) {
+        counter.history.shift();
         counter.history.push(currentCount);
+      }else {
+        counter.history.push(currentCount);
+      }
         return currentCount--;
     };
   },
@@ -140,22 +146,23 @@ var myFunc = setInterval(function() {
   alert( "Выводить текст.." );
   if (count >= 5) {
     clearInterval(myFunc);
+    alert("Закончить выводить текст.." );
   }
 }, 2000);
 
 //setInterval через 1,3,5,7,9 секунд
-// var count = 0;
-// var interval = 1000;
-// var sInterval = setInterval(myFunction(count), interval);
-// function myFunction(count) {
-//     count++;
-//     alert("Выводить текст..");
-//     console.log(interval);
-//     clearInterval(sInterval);
-//     if(count < 5){
-//       interval += 2000;
-//       run = setInterval(myFunction(count), interval);
-//     } else {
-//       clearInterval(sInterval);
-//     }
-// }
+var count = 0;
+var interval = -1000;
+var delta = 2000;
+var myFunction = function() {
+    count++;
+    interval += delta;
+    alert(interval+ " : Выводить текст.." );
+    if (count >= 5) {
+      clearTimeout(myFunction);
+      alert("Закончить выводить текст.." );
+    } else {
+      setTimeout(myFunction, interval);
+    }
+}
+setTimeout(myFunction, interval);
