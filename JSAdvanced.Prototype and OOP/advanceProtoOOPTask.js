@@ -28,10 +28,10 @@ Vehical.prototype.stop = function() {
   console.log(this.speed);
 }
 Vehical.prototype.toString = function() {
-  console.log("Метод 'toString' переопределен!");
+  return "Hello";
 }
 Vehical.prototype.valueOf = function() {
-  console.log("Метод 'valueOf' переопределен!");
+  return this.speed;
 }
 
 function Bike() {
@@ -127,13 +127,13 @@ function Vehical() {
   this.stop = function() {
   this.speed = 0;
   };
-
+  
   this.toString = function() {
-    console.log("Метод 'toString' переопределен!");
+    return "Hello";
   };
 
   this.valueOf = function() {
-    console.log("Метод 'valueOf' переопределен!");
+    return this.speed;
   }
 };
 
@@ -147,6 +147,7 @@ function Bike() {
     console.log(this.speed + " Vrrr~um");
   };
 };
+Bike.prototype = Object.create(Vehical.prototype);
 var b = new Bike();
 b.move();
 b.move();
@@ -180,6 +181,7 @@ function Car() {
     }
   };
 }
+Car.prototype = Object.create(Vehical.prototype);
 Car.count = 0;
 var c1 = new Car();
 var c2 = new Car();
@@ -203,6 +205,7 @@ function MonsterTruck() {
     setTimeout(od, 1000);
   }
 }
+MonsterTruck.prototype = Object.create(Car.prototype);
 var m = new MonsterTruck();
 var m1 = new MonsterTruck();
 var m2 = new MonsterTruck();
