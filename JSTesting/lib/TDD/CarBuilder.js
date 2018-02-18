@@ -1,16 +1,34 @@
-//http://opensas.wordpress.com/2013/06/23/sharing-you-javascript-ninja-secrets-run-your-jasmine-tests-on-jsfiddle/
+function Car(seatsCount,tripComputer,gps,tyreSize){
+    this.getSeats = function() {
+        this.seatsCount = seatsCount;
+        return this.seatsCount;
+    }
+    this.getTripComputer = function() {
+        this.tripComputer = tripComputer;
+        return this.tripComputer;
+    }
+    this.getGps = function() {
+        this.gps = gps;
+        return this.gps;
+    }
+    this.getTyreSize = function() {
+        this.tyreSize = tyreSize;
+        return this.tyreSize;
+    }
+}
+
 function CarBuilder(){
-	this.seatsCount = 0;
+	this.seatsCount = 4;
 	this.tripComputer = false;
 	this.gps = false;
-	this.tyreSize = 'small';
+	this.tyreSize = 'medium';
 }
 
 CarBuilder.prototype.reset = function(){
-	this.seatsCount = 0;
+	this.seatsCount = 4;
 	this.tripComputer = false;
 	this.gps = false;
-	this.tyreSize = 'small';
+	this.tyreSize = 'medium';
   return this;
 }
 CarBuilder.prototype.setSeats = function(seatsCount){
@@ -30,12 +48,8 @@ CarBuilder.prototype.setTyreSize = function(tyreSize){
 	return this;
 }
 CarBuilder.prototype.getResult = function(){
-  return {
-    getSeats : this.seatsCount,
-    getTripComputer : this.tripComputer,
-    getGps : this.gps,
-    getTyreSize : this.tyreSize
-  }
+	var car = new Car(this.seatsCount, this.tripComputer, this.gps, this.tyreSize)
+	return car;
 }
 
 // var carBuilder = new CarBuilder();

@@ -1,4 +1,4 @@
-var Child = require('../lib/Child/child');
+var Child = require('../lib/Child and appels/child');
 
 describe("Child tests", function(){
   it("should return next child", function(){
