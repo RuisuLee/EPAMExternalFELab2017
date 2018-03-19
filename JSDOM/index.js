@@ -1,12 +1,11 @@
 class Slider {
     constructor(images,id,parentClassName){
-        // var mainContainer = document.getElementById(this.id);
-        this.id = "slider"+id;
-        // this.mainContainer = document.getElementById(this.id);
+        this.sliderId = "slider"+id;
+        this.currentImageID = 0;
         this.images = images;
         this.currentImageSrc = images[0];
         this.slider = document.getElementsByClassName(parentClassName)[0].appendChild(this.createSliderContainer(images));
-        document.getElementById(0).classList.add("currentImage");
+        this.mainContainer().getElementsByClassName(0)[0].classList.add("currentImage");
     }
 
     static slider() {
@@ -40,7 +39,7 @@ class Slider {
     createSliderContainer(images){
         let slider = document.createElement("div");
         slider.classList.add(Slider.slider());
-        slider.id = this.id;
+        slider.id = this.sliderId;
         slider.appendChild(this.createMainImgContainer());
         slider.appendChild(this.createCarousel(images));
 
@@ -48,7 +47,7 @@ class Slider {
     }
 
     mainContainer(){
-        let result = document.getElementById(this.id);
+        let result = document.getElementById(this.sliderId);
         return result;
     }
 
@@ -76,23 +75,24 @@ class Slider {
         img.src = "left.svg";
         img.classList.add(Slider.arrow());
         img.addEventListener("click", function () {
-            let arr = mainContainer.getElementsByClassName(Slider.miniImgs());
-            if (currentImageId === 0){
-                currentImageId = arr.length - 1;
+            let container = this.mainContainer();
+            let arr = container.getElementsByClassName(Slider.miniImgs());
+            if (this.currentImageID === 0){
+                this.currentImageID = arr.length - 1;
             }
             else {
-                currentImageId--;
+                this.currentImageID--;
             }
             for (let i = 0; i < arr.length; i++){
                 arr[i].classList.remove(Slider.currentImage());
             }
-            Slider.mainContainer().getElementById(currentImageId).classList.add(Slider.currentImage());
-            Slider.mainContainer().getElementsByClassName(Slider.mainIMG())[0].removeChild(Slider.mainContainer().getElementsByClassName(Slider.bigImg())[0]);
+            container.getElementsByClassName(this.currentImageID)[0].classList.add(Slider.currentImage());
+            container.getElementsByClassName(Slider.mainIMG())[0].removeChild(container.getElementsByClassName(Slider.bigImg())[0]);
             let newImg = document.createElement("img");
-            newImg.src = Slider.mainContainer().getElementById(currentImageId).src;
+            newImg.src = container.getElementsByClassName(this.currentImageID)[0].src;
             newImg.classList.add(Slider.bigImg());
-            Slider.mainContainer().getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
-        });
+            container.getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
+        }.bind(this));
         return img;
     }
 
@@ -101,23 +101,24 @@ class Slider {
         img.src = "right.svg";
         img.classList.add(Slider.arrow());
         img.addEventListener("click",function () {
-            let arr = Slider.mainContainer().getElementsByClassName(Slider.miniImgs());
-            if (currentImageId < arr.length - 1){
-                currentImageId++;
+            let container = this.mainContainer();
+            let arr = container.getElementsByClassName(Slider.miniImgs());
+            if (this.currentImageID < arr.length - 1){
+                this.currentImageID++;
             }
             else {
-                currentImageId = 0;
+                this.currentImageID = 0;
             }
             for (let i = 0; i < arr.length; i++){
                 arr[i].classList.remove(Slider.currentImage());
             }
-            Slider.mainContainer().getElementById(currentImageId).classList.add(Slider.currentImage());
-            Slider.mainContainer().getElementsByClassName(Slider.mainIMG())[0].removeChild(Slider.mainContainer().getElementsByClassName(Slider.bigImg())[0]);
+            container.getElementsByClassName(this.currentImageID)[0].classList.add(Slider.currentImage());
+            container.getElementsByClassName(Slider.mainIMG())[0].removeChild(container.getElementsByClassName(Slider.bigImg())[0]);
             let newImg = document.createElement("img");
-            newImg.src = this.mainContainer.getElementById(currentImageId).src;
+            newImg.src = container.getElementsByClassName(this.currentImageID)[0].src;
             newImg.classList.add(Slider.bigImg());
-            Slider.mainContainer().getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
-        });
+            container.getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
+        }.bind(this));
         return img;
     }
 
@@ -138,19 +139,21 @@ class Slider {
         img.src = url;
         img.id = id;
         img.classList.add(Slider.miniImgs());
+        img.classList.add(id);
         img.addEventListener("click",function (){
-            let arr = this.mainContainer().getElementsByClassName(Slider.miniImgs());
+            let container = this.mainContainer();
+            this.currentImageID = event.target.id;
+            let arr = container.getElementsByClassName(Slider.miniImgs());
             for (let i = 0; i < arr.length; i++){
                 arr[i].classList.remove(Slider.currentImage());
             }
-            this.mainContainer().getElementById(this.id).classList.add(Slider.currentImage());
-            this.mainContainer().getElementsByClassName(Slider.mainIMG())[0].removeChild(this.mainContainer().getElementsByClassName(Slider.bigImg())[0]);
+            container.getElementsByClassName(this.currentImageID)[0].classList.add(Slider.currentImage());
+            container.getElementsByClassName(Slider.mainIMG())[0].removeChild(container.getElementsByClassName(Slider.bigImg())[0]);
             let newImg = document.createElement("img");
-            newImg.src = this.src;
+            newImg.src = event.target.src;
             newImg.classList.add(Slider.bigImg());
-            this.mainContainer().getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
-            currentImageId = this.id;
-        });
+            container.getElementsByClassName(Slider.mainIMG())[0].appendChild(newImg);
+        }.bind(this));
         return img;
     }
 }
