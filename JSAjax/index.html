@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Zaitceva Aleksandra">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="icon" type="image/png" href="assets/umbrella.png">
+</head>
+<body>
+	<div class="wrapper">
+
+		<header>
+			<span class="header-wrapper">
+				<div class="header-icon"></div>
+				<p class="header-caption">Weather</p>
+				<p class="header-text">We'll weather the weather</p>
+			</span>
+		</header>
+
+		<main>
+
+			<nav>
+				<div class="nav-item" onclick="getCityWeather(2643744)">London</div>
+				<div class="nav-item" onclick="getCityWeather(500095)">Rayzan</div>
+				<div class="nav-item" onclick="getCityWeather(5128638)">New York</div>
+				<div class="nav-item" onclick="getCityWeather(5601538)">Moscow</div>
+			</nav>
+
+			<div class="wiget">
+
+				<h1 class="city-name">New York, NY</h1>
+				<p class="current-date">Tuesday, April 15th</p>
+				<p class="current-weather">Overcast</p>
+
+				<div class="current-weather">
+
+					<div class="t">
+						<img src="" class="day-list-item-icons current-weather-icon">
+						<p class="current-temp"></p>
+					</div>
+
+					<div class="weather-info">
+                        <p class="current-humidity"></p>
+                        <p class="current-pressure"></p>
+                        <p class="current-temperature"></p>
+					</div>
+
+					<div></div>	
+				</div>
+				<div class="day-list">
+
+					<div class="day-list-item today">
+						<p class="day-list-item-day"></p>
+						<img src="" class="day-list-item-icon">
+						<div class="temperature">
+							<p class="day-list-item-max"></p>
+							<p class="day-list-item-min"></p>
+						</div>
+						<div class="pressure">
+							<p>Pressure</p>
+                            <p class="day-list-item-pressure"></p>
+						</div>
+					</div>
+
+					<div class="day-list-item">
+						<p class="day-list-item-day"></p>
+						<img src="" class="day-list-item-icon">
+						<div class="temperature">
+							<p class="day-list-item-max"></p>
+							<p class="day-list-item-min"></p>
+						</div>
+						<div class="pressure">
+                            <p>Pressure</p>
+                            <p class="day-list-item-pressure"></p>
+						</div>
+					</div>
+
+					<div class="day-list-item">
+						<p class="day-list-item-day"></p>
+						<img src="" class="day-list-item-icon">
+						<div class="temperature">
+							<p class="day-list-item-max"></p>
+							<p class="day-list-item-min"></p>
+						</div>
+						<div class="pressure">
+                            <p>Pressure</p>
+                            <p class="day-list-item-pressure"></p>
+						</div>
+					</div>
+
+					<div class="day-list-item">
+						<p class="day-list-item-day"></p>
+						<img src="" class="day-list-item-icon">
+						<div class="temperature">
+							<p class="day-list-item-max"></p>
+							<p class="day-list-item-min"></p>
+						</div>
+						<div class="pressure">
+                            <p>Pressure</p>
+                            <p class="day-list-item-pressure"></p>
+						</div>
+					</div>
+
+                    <div class="day-list-item">
+                        <p class="day-list-item-day"></p>
+                        <img src="" class="day-list-item-icon">
+                        <div class="temperature">
+                            <p class="day-list-item-max"></p>
+                            <p class="day-list-item-min"></p>
+                        </div>
+                        <div class="pressure">
+                            <p>Pressure</p>
+                            <p class="day-list-item-pressure"></p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			
+
+			<aside>
+				<a 
+					href="https://www.tripadvisor.com/TravelersChoice-AllInclusive-cTop-g1" 
+					class="aside-item" 
+					target="_blank">
+					Resorts
+				</a>
+				<a 
+					href="https://whatsyourimpact.org/global-warming" 
+					class="aside-item" 
+					target="_blank">
+					Global warming
+				</a>
+				<a 
+					href="http://edition.cnn.com/2018/01/09/africa/sahara-snow-trnd/index.html" 
+					class="aside-item" 
+					target="_blank">
+					Snow in the Sahara
+				</a>
+			</aside>
+
+		</main>
+	</div>
+
+	<footer>
+		<p>© RuisuLee 2018</p>
+	</footer>
+
+    <script src="assets/config.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+</html>
