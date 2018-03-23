@@ -100,7 +100,7 @@ function putCurrentDataToHTML(data) {
 getCityWeatherWithOpenweathermapAPI(2643744);
 
 async function getWeather(city) {
-    let data = await fetch('http://localhost:3000/'+city);
+    let data = await fetch('http://localhost:3000/weather/'+city);
     return data;
 }
 
@@ -126,33 +126,33 @@ function getWeatherWithMyAPI(city) {
             currentPressureContainer[0].innerHTML = `Pressure: ${getPressure(data.currentWeather.currentPressure)}`;
 
             let currentTempContainer = document.getElementsByClassName("current-temperature");
-            currentTempContainer[0].innerHTML = `Temperature: ${getTemperature(data.currentWeather.currentTemp)}`;
+            currentTempContainer[0].innerHTML = `Temperature: ${data.currentWeather.currentTemp}<sup>°</sup>`;
 
 
 
             let dataContainers = document.getElementsByClassName("day-list-item-day");
             for (let i = 0; i < dataContainers.length; i++){
-                dataContainers[i].innerHTML = data.list[i].date;
+                dataContainers[i].innerHTML = data.dailyWeather.list[i].date;
             }
 
             let iconContainers = document.getElementsByClassName("day-list-item-icon");
             for (let i = 0; i < iconContainers.length; i++){
-                iconContainers[i].src = data.list[i].icon;
+                iconContainers[i].src = data.dailyWeather.list[i].icon;
             }
 
             let maxTempContainers = document.getElementsByClassName("day-list-item-max");
             for (let i = 0; i < maxTempContainers.length; i++){
-                maxTempContainers[i].innerHTML = getTemperature(data.list[i].maxTemp);
+                maxTempContainers[i].innerHTML = data.dailyWeather.list[i].maxTemp+"<sup>°</sup>";
             }
 
             let minTempContainers = document.getElementsByClassName("day-list-item-min");
             for (let i = 0; i < minTempContainers.length; i++){
-                minTempContainers[i].innerHTML = getTemperature(data.list[i].minTemp);
+                minTempContainers[i].innerHTML = data.dailyWeather.list[i].minTemp+"<sup>°</sup>";
             }
 
             let pressureContainers = document.getElementsByClassName("day-list-item-pressure");
             for (let i = 0; i < pressureContainers.length; i++){
-                pressureContainers[i].innerHTML = getPressure(data.list[i].pressure);
+                pressureContainers[i].innerHTML = getPressure(data.dailyWeather.list[i].pressure);
             }
         });
     });
