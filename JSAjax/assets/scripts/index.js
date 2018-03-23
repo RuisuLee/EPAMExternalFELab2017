@@ -14,13 +14,13 @@ async function getCurrentWeather(cityID) {
 }
 
 function getCityWeatherWithOpenweathermapAPI(cityID) {
-    let dataForWeek = getWeatherForWeek(cityID).then(response => {
+    getWeatherForWeek(cityID).then(response => {
         response.json().then(function(data) {
             putDataForWeekToHTML(data);
         });
     });
 
-    let currentData = getCurrentWeather(cityID).then(response => {
+    getCurrentWeather(cityID).then(response => {
         response.json().then(function(data) {
             putCurrentDataToHTML(data);
         });
@@ -105,7 +105,7 @@ async function getWeather(city) {
 }
 
 function getWeatherWithMyAPI(city) {
-    let dataForWeek = getWeather(city).then(response => {
+    getWeather(city).then(response => {
         response.json().then(function(data) {
             let cityNameContainer = document.getElementsByClassName("city-name");
             cityNameContainer[0].innerHTML = data.currentWeather.cityName;
